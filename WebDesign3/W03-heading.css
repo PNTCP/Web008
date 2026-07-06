@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    /* margin: 20px 450px; */
+    background-color: rgb(209, 249, 252);
+}
+header {
+    background: linear-gradient(90deg, rgb(0, 0, 209), rgb(0, 119, 255));
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 10px 12px rgb(0, 20, 75);
+    font-weight: bolder;
+}
+header a {
+    text-decoration: none;
+}
+header a nav {
+    margin-top: -20px;
+    font-size: 20px;
+    margin-left: -10px;
+    color: white;
+}
+header a nav:hover {
+    text-decoration: underline;
+}
+header p {
+    font-size: 30px;
+}
+
+.header {
+    margin: 50px;
+    margin-left: -700px;
+}
+
+.header h1 {
+    color: rgba(0, 54, 134, 0.959);
+    text-align: center;
+    text-shadow: 2px 4px 2px rgba(39, 0, 0, 0.192);
+}
+.header p{
+    color: rgb(77, 77, 77);
+    text-align: center;
+    margin-top: -10px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cards {
+    border: 3px solid black;
+    border-top: 8px solid rgb(28, 1, 145); 
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px 30px 30px; 
+    background-color: white;
+    box-shadow: 8px 10px 10px gray;
+}
+.cards p{
+    color: rgb(121, 121, 121);
+}
+.cards h2 {
+    margin-bottom: 30px;
+}
+.cards pre {
+    border: solid black;
+    border-radius: 10px;
+    margin-right: 150px;
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+}
+.button {
+    border: 2px solid black;
+    margin-left: 1365px;
+    margin-right: 360px;
+    padding-left: 25px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 8px;
+    background-color: black;
+    margin-bottom: 40px;
+}
+.button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+li {
+    margin: 2px 0;
+}
+.h1-label {
+    background: rgb(55, 55, 255);
+    padding: 1px 5px;
+    border-radius: 7px;
+}
+.h2-label {
+    background: rgb(238, 55, 255);
+    padding: 1px 5px;
+    border-radius: 7px;
+}.h3-label {
+    background: rgb(201, 100, 28);
+    padding: 1px 5px;
+    border-radius: 7px;
+}.h4-label {
+    background: rgb(187, 178, 18);
+    padding: 1px 5px;
+    border-radius: 7px;
+}.h5-label {
+    background: rgb(28, 193, 22);
+    padding: 1px 5px;
+    border-radius: 7px;
+}.h6-label {
+    background: rgba(2, 185, 163, 0.552);
+    padding: 1px 5px;
+    border-radius: 7px;
+}
+li b {
+    color: white;
+}
+.note::before {
+    content: "✏️";
+}
+.light {
+    border-left: 2px solid rgb(87, 87, 87);
+    background-color: rgb(244, 245, 235);
+}
+
+.light::before {
+    content: "💡";
+    margin: 0 10px;
+}
