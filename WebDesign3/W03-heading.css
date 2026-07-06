@@ -78,49 +78,49 @@ header p {
     margin-bottom: 30px;
 }
 .button {
-    border: 2px solid black;
-    margin-left: 1365px;
-    margin-right: 360px;
-    padding-left: 25px;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    border-radius: 8px;
-    background-color: black;
+    display: block;        
+    width: fit-content;    
+    margin-left: auto;     
+    margin-right: 350px;    
     margin-bottom: 40px;
 }
+
 .button a {
+    display: block;         
+    padding: 3px 25px;      
+    background-color: black; 
+    border: 2px solid black; 
+    border-radius: 8px;      
+    
     text-decoration: none;
     color: white;
     font-weight: bolder;
+
+}
+
+.button a:hover {
+    background-color: #333333;
+    border-color: #333333;
 }
 li {
     margin: 2px 0;
 }
-.h1-label {
-    background: rgb(55, 55, 255);
+.label {
     padding: 1px 5px;
     border-radius: 7px;
 }
-.h2-label {
+.h1-label {
+    background: rgb(55, 55, 255);
+}.h2-label {
     background: rgb(238, 55, 255);
-    padding: 1px 5px;
-    border-radius: 7px;
 }.h3-label {
     background: rgb(201, 100, 28);
-    padding: 1px 5px;
-    border-radius: 7px;
 }.h4-label {
     background: rgb(187, 178, 18);
-    padding: 1px 5px;
-    border-radius: 7px;
 }.h5-label {
     background: rgb(28, 193, 22);
-    padding: 1px 5px;
-    border-radius: 7px;
 }.h6-label {
     background: rgba(2, 185, 163, 0.552);
-    padding: 1px 5px;
-    border-radius: 7px;
 }
 li b {
     color: white;
