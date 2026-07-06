@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(218, 248, 250);
+}
+
+header, .hero, .card, .tip-box {
+    border: 2px solid black;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: linear-gradient(to right, rgb(0, 0, 131), rgb(104, 164, 253));
+    color: white;
+    font-weight: bold;
+    
+}
+
+.brand {
+    display: flex;         
+    align-items: center;   
+    gap: 12px;             
+}
+
+.brand-icon {
+    font-size: 2.5rem;       
+}
+
+.brand-text h2 {
+    margin: 0;            
+    font-size: 1.5rem;
+}
+
+.brand p {
+    font-size: 0.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+
+}
+
+img {
+    width: 80px;
+}
+
+.container {
+    max-width: 1800px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: rgb(170, 170, 170);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    
+}
