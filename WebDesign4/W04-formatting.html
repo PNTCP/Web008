@@ -27,9 +27,11 @@
     </header>
     <div class="hero">
         <div class="hero-icon">
-            <img src="../Picture/4997543.png" alt="">
+            <h1>
+                &lt;/>
+            </h1>
         </div>
-        <div class="hero-header">
+        <div class="hero-text">
             <h1>แบบฝึกปฎิบัติ: HTML Formatting</h1>
             <p>เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML พร้อมยกตัวอย่างและตกแต่งด้วย CSS</p>
         </div>
@@ -37,44 +39,114 @@
     <div class="container">
         <div class="card-grid">
             <div class="card">
-                ตัวอย่างผลลัพธ์
-                <p><b>ข้อความตัวหนา</b></p>
-                <p><strong>ข้อความสำคัญ</strong></p>
-                <p><i>ข้อความตัวเอียง</i></p>
-                <p><em>ข้อความเน้นเสียง</em></p>
-                <p><u>ข้อความขีดเส้นใต้</u></p>
-                <p><mark>ข้อความที่ถูกเน้น</mark></p>
-                <p><small>ข้อความขนาดเล็ก</small></p>
-                <p><del>ข้อความที่ถูกลบ</del></p>
-                <p>x<sup>2</sup></p>
-                <p>H<sub>2</sub>O</p>
+                <div class="card-header">
+                    <div class="card-header-icon">
+                        <!-- <span></span> -->
+                        <h2>📖</h2>
+                    </div>
+                    <h2 class="example">ตัวอย่างผลลัพธ์</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card-format">
+                        <span class="label-b">B:</span><b>ข้อความตัวหนา</b>
+                    </div>
+
+                    <div class="card-format">
+                        <span class="label-strong">STRONG:</span><strong>ข้อความสำคัญ</strong>
+                    </div>
+
+                    <div class="card-format">
+                        <span class="label-i">I:</span><i>ข้อความตัวเอียง</i>
+                    </div>
+                    <div class="card-format">
+                        <span class="label-em">EM:</span><em>ข้อความเน้นเสียง</em>
+                    </div>
+                    <div class="card-format">
+                        <span class="label-u">U:</span><u>ข้อความขีดเส้นใต้</u>
+                    </div>
+                    <div class="card-format">
+                        <span class="label-mark">MARK:</span><mark>ข้อความที่ถูกเน้น</mark>
+                    </div>
+                    <div class="card-format">
+                        <span class="label-small">SMALL:</span><small>ข้อความขนาดเล็ก</small>
+                    </div>
+                    <div class="card-format">
+                        <span class="label-del">DEL:</span><del>ข้อความที่ถูกลบ</del>
+                    </div>
+                    <div class="card-format">
+                        <span class="label-sup">SUP:</span>
+                        <p>x<sup>2</sup></p>
+                    </div>
+                    <div class="card-format">
+                        <span class="label-sub">SUB:</span>
+                        <p>H<sub>2</sub>O</p>
+                    </div>
+                </div>
             </div>
             <div class="card">
-                ตัวอย่างโค้ด HTML
-                <p>&lt;b>ข้อความตัวหนา</b></p>
-                <p>&lt;strong>ข้อความสำคัญ</strong></p>
-                <p>&lt;i>ข้อความตัวเอียง</i></p>
-                <p>&lt;em>ข้อความเน้นเสียง</em></p>
-                <p>&lt;u>ข้อความขีดเส้นใต้</u></p>
-                <p>&lt;mark>ข้อความที่ถูกเน้น</mark></p>
-                <p>&lt;small>ข้อความขนาดเล็ก</small></p>
-                <p>&lt;del>ข้อความที่ถูกลบ</del></p>
-                <p>x&lt;sup>2</sup></p>
-                <p>H&lt;sub>2</sub></p>
+                <div class="card-header">
+                    <div class="card-header-icon">
+                        <h2>📖</h2>
+                    </div>
+                    <h2 class="example">ตัวอย่างโค้ด</h2>
+                </div>
+                <div class="card-body">
+                    <pre>
+<span class="line-no">1.</span><span class="html-tag">&lt;b></span>ข้อความตัวหนา<span class="html-tag">&lt;/b></span>
+<span class="line-no">2.</span><span class="html-tag">&lt;strong></span>ข้อความสำคัญ<span class="html-tag">&lt;/strong></span>
+<span class="line-no">3.</span><span class="html-tag">&lt;i></span>ข้อความตัวเอียง<span class="html-tag">&lt;/i></span>
+<span class="line-no">4.</span><span class="html-tag">&lt;em></span>ข้อความเน้นเสียง<span class="html-tag">&lt;/em></span>
+<span class="line-no">5.</span><span class="html-tag">&lt;u></span>ข้อความขีดเส้นใต้<span class="html-tag">&lt;/u></span>
+<span class="line-no">6.</span><span class="html-tag">&lt;mark></span>ข้อความที่ถูกเน้น<span class="html-tag">&lt;/mark></span>
+<span class="line-no">7.</span><span class="html-tag">&lt;small></span>ข้อความขนาดเล็ก<span class="html-tag">&lt;/small></span>
+<span class="line-no">8.</span><span class="html-tag">&lt;del></span>ข้อความที่ถูกลบ<span class="html-tag">&lt;/del></span>
+<span class="line-no">9.</span><span class="html-tag">x&lt;sup></span>2<span class="html-tag">&lt;/sup></span>
+<span class="line-no">10.</span><span class="html-tag">H&lt;sub></span>2<span class="html-tag">&lt;/sub></span>
+</pre>
+                </div>
             </div>
             <div class="card">
-                กิจกรรมฝึกปฏิบัต
-                <p>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</p>
-                <p>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</p>
-                <p>ทดลองเปรียบเทียบ &lt;b> กับ &lt;strong> และ &lt;i> กับ &lt;em></p>
-                <p>ปรับสี ขนาด และพื้นหลังบางข้อความด้วย CSS</p>
-                <p>บันทึกไฟล์ชื่อ formatting.html</p>
+                <div class="card-header">
+                    <div class="card-header-icon">
+                        <h2>📖</h2>
+                    </div>
+                    <h2 class="activity">กิจกรรมฝึกปฏิบัต</h2>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <p>
+                            <div class="c1"><span class="check">✔️</span></div>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</p>
+                        </li>
+                        <li>
+                            <p>
+                            <div class="c2"><span class="check">✔️</span></div>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</p>
+                        </li>
+                        <li>
+                            <p>
+                            <div class="c3"><span class="check">✔️</span></div>ทดลองเปรียบเทียบ &lt;b> กับ &lt;strong>
+                            และ &lt;i> กับ
+                            &lt;em></p>
+                        </li>
+                        <li>
+                            <p>
+                            <div class="c4"><span class="check">✔️</span></div>ปรับสี ขนาด และพื้นหลังบางข้อความด้วย CSS
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                            <div class="c5"><span class="check">✔️</span></div>บันทึกไฟล์ชื่อ formatting.html</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="tip-box">
             เกร็ดความรู้
-            <p>แท็กจัดรูปแบบข้อความฆ่ายให้เนื้อหาลือสารชัดเจนและมีความหมายมากขึ้น เช่น &lt;strong> ใช้สำหรับร้อควานส่าสัญ venn> 1565667วนเล่ากัญหรือภารมดเ เทลกับ
-            ใช้เน้นข้อความที่ต้องการให้โดดเด่น แท็กเหล่านี้ช่วยเพิ่มความอ่านง่ายและช่วยจัดระเบียบเนื้อหาให้ผู้ใช้งานเข้าใจได้ง่ายขึ้น</p>
+            <p>แท็กจัดรูปแบบข้อความฆ่ายให้เนื้อหาลือสารชัดเจนและมีความหมายมากขึ้น เช่น &lt;strong>
+                ใช้สำหรับร้อควานส่าสัญ venn> 1565667วนเล่ากัญหรือภารมดเ เทลกับ
+                ใช้เน้นข้อความที่ต้องการให้โดดเด่น
+                แท็กเหล่านี้ช่วยเพิ่มความอ่านง่ายและช่วยจัดระเบียบเนื้อหาให้ผู้ใช้งานเข้าใจได้ง่ายขึ้น</p>
         </div>
     </div>
 </body>
