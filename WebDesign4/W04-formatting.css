@@ -293,3 +293,34 @@ pre {
     /* display: inline-block; */
 
 }
+
+.tip-box {
+    border: 3px solid rgb(229, 229, 1);
+    background-color: rgb(253, 253, 220);
+    border-radius: 10px;
+}
+
+.tip-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: rgb(111, 48, 0);
+}
+
+.tip-emoji {
+    font-size: 25px;
+    /* border: 1px solid black; */
+    border-radius: 60px;
+    background-color: rgb(255, 200, 0);
+    padding: 15px 20px;
+}
+.tip-h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tip-body {
+    margin-left: 70px;
+    color: rgb(58, 58, 58);
+}
