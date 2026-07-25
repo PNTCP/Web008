@@ -324,3 +324,53 @@ pre {
     margin-left: 70px;
     color: rgb(58, 58, 58);
 }
+
+footer {
+    background-color: rgb(16, 16, 146);
+    color: white;
+}
+
+.footer-body {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+}
+
+.footer-about {
+    padding: 30px 80px;
+}
+
+.footer-about h3 {
+    margin: 10px 0;
+}
+
+.footer-about p {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.footer-list {
+    padding: 30px;
+    margin-right: 100px;
+}
+
+.footer-list li {
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.footer-credit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 80px;
+    border-top: 1px solid gray;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.footer-credit p {
+    text-align: center;
+    margin: 15px 0;
+}
