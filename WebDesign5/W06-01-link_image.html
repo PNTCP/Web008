@@ -78,10 +78,10 @@
                                 <h4>โค้ด HTML</h4>
                             </div>
                             <pre>
- 1.   &lt;a href="https://npru.ac.th">ไปยังเว็บมหาวิทยาลัย&lt;/a>
- 2.   &lt;a href="https://www.google.com">เปิด google ในแท็บใหม่&lt;/a>
- 3.   &lt;a href="mailto:teacher@example.com">📩 ส่งอีเมลถึงผู้สอน&lt;/a>
- 4.   &lt;a href="index.html"> &lt;- กลับหน้าแรก&lt;/a>
+ 1.   <span class="elm">&lt;a</span> <span class="atr">href</span>=<span class="val">"https://npru.ac.th"</span><span class="elm">></span>ไปยังเว็บมหาวิทยาลัย<span class="elm">&lt;/a></span>
+ 2.   <span class="elm">&lt;a</span> <span class="atr">href</span>=<span class="val">"https://www.google.com"</span><span class="elm">></span>เปิด google ในแท็บใหม่<span class="elm">&lt;/a></span>
+ 3.   <span class="elm">&lt;a</span> <span class="atr">href</span>=<span class="val">"mailto:teacher@example.com"</span><span class="elm">></span>📩 ส่งอีเมลถึงผู้สอน<span class="elm">&lt;/a></span>
+ 4.   <span class="elm">&lt;a</span> <span class="atr">href</span>=<span class="val">"index.html"</span><span class="elm">></span> &lt;- กลับหน้าแรก<span class="elm">&lt;/a></span>
                             </pre>
                         </div>
                     </div>
@@ -117,18 +117,18 @@
                                     <p>โลโก้วิชา</p>
                                 </div>
                             </div>
-                            <div class="button-back">
+                            <!-- <div class="button-back">
                                 <p><a href="index.html"> &lt;- กลับหน้าแรก</a></p>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="code">
                             <div class="card-header">
                                 <h4>โค้ด HTML</h4>
                             </div>
                             <pre>
-1.   &lt;img src="images/student.jpg" alt="นักศึกษากำลังเรียน" width="220"&lt;/a>
-2.   &lt;img src="images/student.jpg" alt="นักศึกษากำลังเรียน" width="220"&lt;/a>
-3.   &lt;img src="images/logo.jpg" alt="โลโก้วิชา" width="220"&lt;/a>
+1.   <span class="elm">&lt;img</span> <span class="atr">src</span>=<span class="val">"images/student.jpg"</span> <span class="atr">alt</span>=<span class="val">"นักศึกษากำลังเรียน"</span> <span class="atr">width</span>=<span class="val">"220"</span><span class="elm">&lt;/a></span>
+2.   <span class="elm">&lt;img</span> <span class="atr">src</span>=<span class="val">"images/student.jpg"</span> <span class="atr">alt</span>=<span class="val">"นักศึกษากำลังเรียน"</span> <span class="atr">width</span>=<span class="val">"220"</span><span class="elm">&lt;/a></span>
+3.   <span class="elm">&lt;img</span> <span class="atr">src</span>=<span class="val">"images/logo.jpg"</span> <span class="atr">alt</span>=<span class="val">"โลโก้วิชา"</span> <span class="atr">width</span>=<span class="val">"220"</span><span class="elm">&lt;/a></span>
                                                 </pre>
                         </div>
                     </div>
@@ -176,16 +176,26 @@
         <footer class="tip-box">
             <div class="icon-tip">i</div>
             <div class="body-tip">
-                <h2>เกร็ดความรู้</h2>
-                <p>แท็ก &lt;a> ใช้สําหรับสร้างลิงก์ (Hyperlink) เพื่อเชื่อมโยงไปยังหน้าเว็บ ไฟล์ หรือที่อยู่อีเมลต่าง ๆ
-                    โดยใช้แอตทริบิวต์ href
-                    ระบุปลายทางของลิงก์ แท็ก &lt;img> ใช้สําหรับแทรกรูปภาพ โดยใช้แอตทริบิวต์ src ระบุ
-                    แหล่งที่อยู่ของไฟล์รูปภาพ และ alt
-                    ระบุข้อความอธิบายรูปภาพ ซึ่งสําคัญต่อการเข้าถึงได้ (Accessibility)
-                    และช่วยแสดงข้อความเมื่อไม่สามารถโหลดรูปได้ • CSS
-                    สามารถใช้ตกแต่งลิงก์ด้วย link color, เอฟเฟกต์ เมื่อ hover, ขนาดของรูปภาพ, ขอบ (border), มุมโค้ง
-                    (border-radius)
-                    และเงา (box-shadow) เพื่อให้หน้าเว็บสวยงามและน่าใช้งานมากยิ่งขึ้น</p>
+                <div class="bodys">
+                    <h2>เกร็ดความรู้</h2>
+                    <p>แท็ก <span class="elm">&lt;a></span> ใช้สําหรับสร้างลิงก์ (Hyperlink) เพื่อเชื่อมโยงไปยังหน้าเว็บ
+                        ไฟล์
+                        หรือที่อยู่อีเมลต่าง ๆ
+                        โดยใช้แอตทริบิวต์ <span class="elm">href</span>
+                        ระบุปลายทางของลิงก์ แท็ก <span class="elm">&lt;img></span> ใช้สําหรับแทรกรูปภาพ
+                        โดยใช้แอตทริบิวต์ <span class="elm">src</span> ระบุ
+                        แหล่งที่อยู่ของไฟล์รูปภาพ และ <span class="elm">alt</span>
+                        ระบุข้อความอธิบายรูปภาพ ซึ่งสําคัญต่อการเข้าถึงได้ (Accessibility)
+                        และช่วยแสดงข้อความเมื่อไม่สามารถโหลดรูปได้ • CSS
+                        สามารถใช้ตกแต่งลิงก์ด้วย <span class="elm">link color</span>, เอฟเฟกต์ เมื่อ <span
+                            class="elm">hover</span>, ขนาดของรูปภาพ, ขอบ (<span class="elm">border</span>), มุมโค้ง
+                        (<span class="elm">border-radius</span>)
+                        และเงา (<span class="elm">box-shadow</span>) เพื่อให้หน้าเว็บสวยงามและน่าใช้งานมากยิ่งขึ้น</p>
+                </div>
+                <div class="emoji-body">
+                    <p>💡</p>
+                    <p>📚</p>
+                </div>
             </div>
         </footer>
     </div>
