@@ -430,6 +430,12 @@ body {
         margin: 10px 0;
     }
 
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
     .hero {
         flex-direction: column;
         gap: 20px;
