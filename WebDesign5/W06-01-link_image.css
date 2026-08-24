@@ -207,6 +207,10 @@ body {
     padding: 10px;
     margin-bottom: 10px;
 }
+.img-card:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
 
 .button-back a {
     /* background-color: rgb(224, 224, 248); */
@@ -417,4 +421,103 @@ body {
 .bodys h2 {
         color: rgb(1, 1, 133);
         margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero-image {
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .activity-layout {
+        margin: 15px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card-body {
+        grid-template-columns: 1fr;
+    }
+
+    .side-bar {
+        margin: 0;
+    }
+
+    .side-bar-need {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .brand {
+        margin-left: 0;
+    }
+
+    .main-nav {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav a {
+        margin: 5px 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .side-bar-body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .result-body2 {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-box {
+        flex-direction: column;
+        margin: 0 0 15px 0;
+        padding: 15px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .body-tip {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    } 
 }
