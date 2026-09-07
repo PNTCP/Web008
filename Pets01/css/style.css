@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    /* สีหลักของเว็บไซต์ */
+    --primary-color: rgb(0, 81, 255);
+    --primary-dark-color: rgb(0, 0, 170);
+    --secondary-color: purple;
+
+    /* สีข้อความ */
+    --font-color: black;
+    --font-milk-color: rgb(156, 155, 155);
+
+    /* สีปุ่ม */
+    --button-bg-color: rgb(255, 255, 255);
+    --button-dark-color: rgb(57, 57, 207);
+    
+
+    /* สีพื้นหลัง */
+    --heder-color: rgba(255, 255, 255, 0.747);
+    --footer-bg-color: rgb(83, 83, 83);
+
+
+    /* สีเงา */
+    --header-shadow-color: rgb(211, 209, 209);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: var(--heder-color);
+    padding-block: 2rem; /* 16 px */
+    box-shadow: 0 3px 10px var(--header-shadow-color);
+    backdrop-filter: blur(10px);
+
+    /* ทำให้กับที่ */
+    position: sticky;
+    top: 0;
+
+    /* layer ทำให้ไม่ซ้อนทับกับอะไร */
+    z-index: 99 ;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.header-icon {
+    font-size: 2.5rem;
+}
+
+.header-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--primary-color);
+}
+
+.header-subtitle {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+nav {
+    text-align: center;
+    margin: 50px 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    background-color: var(--button-bg-color);
+    padding: 12px 22px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px var(--header-shadow-color);
+    transition: transform 1s ;
+    transition: 0.15s;
+    display: inline-block;
+    user-select: none; /* ผู้ใช้ไม่สามารถ highlight ได้ */
+}
+
+nav a:hover {
+    background-color: var(--button-dark-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: aqua; */
+    /* margin: 10px 20px; */
+}
+
+.pet-card {
+    margin: 10px 10px;
+    box-shadow: 0 8px 10px var(--header-shadow-color);
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 3rem;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.pet-card:hover {
+    transform: translateY(-10px);
+}
+
+img {
+    width: 100%;
+    height: 16.25rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pet-content {
+    margin: 10px 20px;
+}
+
+.pet-content h2 {
+    color: var(--primary-color);
+}
+
+.pet-content p {
+    margin: 10px 0;
+}
+
+.breed {
+    color: var(--font-milk-color);
+}
+
+footer {
+    padding-block: 2rem;
+    background-color: var(--footer-bg-color);
+    color: white;
+    text-align: center;
+}
