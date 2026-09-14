@@ -73,12 +73,12 @@ body {
     margin-top: 5px;
 }
 
-nav {
+.category-nav {
     text-align: center;
     margin: 50px 50px;
 }
 
-nav a {
+.category-nav label {
     text-decoration: none;
     color: black;
     border-radius: 50px;
@@ -90,15 +90,48 @@ nav a {
     transition: 0.15s;
     display: inline-block;
     user-select: none; /* ผู้ใช้ไม่สามารถ highlight ได้ */
+    cursor: pointer;
 }
 
-nav a:hover {
+.filter-radio {
+    /* display: none; */
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip-path: 50%;
+}
+
+#filter-all:checked ~ .category-nav label[for="filter-all"],
+#filter-dog:checked ~ .category-nav label[for="filter-dog"],
+#filter-cat:checked ~ .category-nav label[for="filter-cat"],
+#filter-bird:checked ~ .category-nav label[for="filter-bird"],
+#filter-fish:checked ~ .category-nav label[for="filter-fish"],
+#filter-small-pets:checked ~ .category-nav label[for="filter-small-pets"] {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.category-title {
+    display: none;
+}
+
+#filter-all:checked ~ main .title-all,
+#filter-dog:checked ~ main .title-dog,
+#filter-cat:checked ~ main .title-cat,
+#filter-bird:checked ~ main .title-bird,
+#filter-fish:checked ~ main .title-fish,
+#filter-small-pets:checked ~ main .title-small-pets {
+    display: inline;
+}
+
+.category-nav label:hover {
     background-color: var(--button-dark-color);
     color: white;
     transform: translateY(-3px);
 }
 
-nav a.active {
+.category-nav label.active {
     background-color: var(--secondary-color);
     color: white;
 }
@@ -112,6 +145,14 @@ nav a.active {
     max-width: 1280px;
     margin: 0 auto;
 
+}
+
+#filter-dog:checked ~ main .pet-card:not(.pet-dog),
+#filter-cat:checked ~ main .pet-card:not(.pet-cat),
+#filter-bird:checked ~ main .pet-card:not(.pet-bird),
+#filter-fish:checked ~ main .pet-card:not(.pet-fish),
+#filter-small-pets:checked ~ main .pet-card:not(.pets-small) {
+    display: none;
 }
 
 .pet-grid {
@@ -166,6 +207,16 @@ img {
     box-shadow: 5px 8px 20px var(--header-shadow-color);
 }
 
+.info-section h2 {
+    text-align: center;
+}
+
+.milk-color {
+    color: var(--font-milk-color);
+    text-align: center;
+    margin: 10px 0;
+}
+
 .info-title {
     text-align: center;
     font-size: 25px;
@@ -216,6 +267,42 @@ img {
 }
 .info-orange h3 {
     color: rgb(86, 26, 0);
+}
+
+fieldset {
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgb(187, 187, 187);
+    margin-bottom: 1rem;
+}
+
+legend {
+    color: var(--primary-color);
+}
+
+.pet-form {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    flex-wrap: wrap; /* ใช้ในการตัดคำเมื่อ responsive หรือ ตามพื้นที่ที่เหลือ */
+    padding: 0.8rem 0;
+}
+
+.form-select input {
+    accent-color: var(--secondary-color); /* เปลี่ยนสี radio pointer */
+}
+
+.form-select label {
+    background-color: rgb(206, 206, 206);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.form-select input:checked + label { /* เมื่อ input หรือ radio เป็น check ให้ label เปลี่ยนสี (จะใช้ + ได้ในกรณีที่ input กับ label อยู่ติดกัน แต่ถ้าไม่อยู่ติดกันให้ใช้ ~ เช่น input h2 label ให้ใช้สัญลักษณ์นี้)*/
+
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 footer {
